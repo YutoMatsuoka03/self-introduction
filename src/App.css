@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
+/* header領域 */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  background-color: #303030;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header-logo {
+  display:flex;
+  justify-content: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-logo li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+
+/* main領域 */
+
+.main-wrapper {
+  padding-top: 1px; /* これをしないとheaderとmainの隙間が埋まらない */
+  padding-bottom: 40px;
+  background-color: #f4fafa;
+}
+
+#main-character {
+  text-align: center;
+  font-family: 'Comic Sans MS';
+  font-size: 40px;
+}
+
+.main-about {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.main-left {
+  width: 45%;
+}
+
+.main-right {
+  width: 45%;
+}
+
+.main-right h2 {
+  border-bottom-style: solid;
+}
+
+.ab-facephoto {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 300px;
+  min-width: 200px;
+  margin-bottom: 75px;
+}
+
+.ab-facephoto img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+
+.ab-profile {
+  background-color: #2f4f4f;
+  color: white;
+  padding: 10px;
+}
+
+.ab-skill ul {
+  padding-left: 0px;
+}
+
+.ab-skill li {
+  display: inline-block;
+  width: 70px;
+  margin-left: 0px;
+  margin-right: 25px;
+  list-style: none;
+}
+
+.ab-skill img {
+  width: 70px;
+  height: 70px;
+}
+
+.ab-skill p {
+  text-align: center;
+}
+
+.ab-SNS img {
+  width: 50px;
+  height: 50px;
+}
+
+
+/* footer領域 */
+
+.footer {
+  background-color: #303030;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
